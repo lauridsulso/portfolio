@@ -14,12 +14,33 @@
 
 <body>
 
+
     <header>
+        <!--WEB NAVIGATION-->
         <ul>
             <li>Header1</li>
             <li>Header2</li>
             <li>Header3</li>
         </ul>
+        <!--MOBILE NAVIGATION-->
+        <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <!-- Top Navigation Menu -->
+        <div class="topnav">
+            <a href="#home" class="active"><span id="logotransparent">Logo</span></a>
+            <!-- Navigation links (hidden by default) -->
+            <div id="myLinks">
+                <a href="#news">News</a>
+                <a href="#contact">Contact</a>
+                <a href="#about">About</a>
+            </div>
+            <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
     </header>
 
     <div class="front">
@@ -33,11 +54,10 @@
                     </div>
 
                     <div id="herotextdiv">
-                        <h1>Who am I?</h1>
-                        <p id="herotext">Hej med jer <br>
-                            Hej med jer <br>
-                            Hej med jer <br>
-                            Hej med jer <br></p>
+                        <h1>Laurids Ulsø</h1>
+                        <p id="herotext">I am a multimediadesigner specializing in coding.<br><br>
+                            I know HTML, CSS, JS6 <br>
+                            PS, AI, XD<br></p>
                         <img id="arrow" src="img/arrow.png" alt="">
                     </div>
                 </div>

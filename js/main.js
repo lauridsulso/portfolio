@@ -1,4 +1,4 @@
-const checkpoint = 600;
+const checkpoint = 500;
 
 window.addEventListener("scroll", () => {
     const currentScroll = window.pageYOffset;
@@ -10,14 +10,14 @@ window.addEventListener("scroll", () => {
     document.querySelector(".front").style.opacity = opacity;
 });
 
-const checkpoint = 600;
 
-window.addEventListener("scroll", () => {
-    const currentScroll = window.pageYOffset;
-    if (currentScroll <= checkpoint) {
-        opacity = 0 - currentScroll / checkpoint;
+
+//mobil navigation
+function myFunction() {
+    var x = document.getElementById("myLinks");
+    if (x.style.display === "block") {
+        x.style.display = "none";
     } else {
-        opacity = 1;
+        x.style.display = "block";
     }
-    document.querySelector(".front2").style.opacity = opacity;
-});
+}
