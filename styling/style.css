@@ -174,7 +174,7 @@ p{
 
 #projectsflex{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-around;
     align-items: center;
     margin-top: 15%;
@@ -190,10 +190,11 @@ p{
 .projectsimg{
     width: 80%;
     transition: transform .2s;
+    padding-bottom: 25px;
 }
 
 .projectsimg:hover{
-transform: scale(1.2);
+transform: scale(1.1);
 cursor: pointer;
 }
 
@@ -217,8 +218,12 @@ cursor: pointer;
 
 /*GENERAL STYLING*/
 
+body{
+margin: 0 0 0 0;
+}
+
+
 html{
-    margin: 0;
   background-color: black;
   font-family: 'Raleway', sans-serif;
 }
@@ -247,21 +252,21 @@ header{
 background-color: black;
 }
 
-li{
+header li{
     display: inline;
     color: white;
     float: right;
     transition: transform .2s;
-    margin: 2% 3.5% 0 3.5%;
+    margin: 2% 5% 0 5%;
 }
 
-li:hover{
+header li:hover{
 transform: scale(1.2);
 }
-ul{
+header ul{
 width: 100%;
 position: fixed;
-right: 12.5%;
+right: 10vw;
 z-index: 2;}
 
 ul{
@@ -290,7 +295,8 @@ transition: transform .2s;}
 #herotext{
     color: white;
     text-align: left;
-    font-size: 3vw;
+    font-size: 2vw;
+    max-width: 70%;
 }
 
 #herotextdiv{
@@ -298,9 +304,89 @@ transition: transform .2s;}
     text-align: left;
     font-size: 3vw;
     position: absolute;
-    bottom: 10%;
+    top: 10vw;
     left: 55%;
     margin-right: 20px;
+}
+
+.skills{
+  width: 25%;
+  position: absolute;
+  bottom: 5vw;
+  right: 20%;
+}
+
+#skillstext{
+  text-align: left;
+  font-size: 1.2vw;
+  margin-top: -3%;
+}
+
+.bar{
+background: #ffffff;
+display: block;
+height: 4px;
+border: 0.5px solid rgba(0, 0,0, 0.1);
+border-radius: 3px;
+overflow: hidden;
+box-shadow: 0 0 5px white;
+}
+
+.bar span{
+  height: 5px;
+  float: left;
+  background: blue;
+}
+
+.html{
+  width: 85%;
+  animation: html 4s;
+
+}
+
+.css{
+width: 80%;
+animation: css 4s;
+}
+
+.javascript{
+width: 50%;
+animation: javascript 4s;
+}
+
+ @keyframes html {
+   0%{
+     width: 0%;}
+
+     100%{
+       width: 85%;
+     }
+   }
+ 
+
+ @keyframes css {
+   0%{
+     width: 0%;}
+
+     100%{
+       width: 80%;
+     }
+   }
+ 
+
+ @keyframes javascript {
+   0%{
+     width: 0%;}
+
+     100%{
+       width: 50%;
+     }
+   }
+ 
+
+.skillsliste{
+  color: white;
+  list-style: none;
 }
 
 #heroflex{
@@ -356,7 +442,7 @@ transition: transform .2s;}
 /*PROJECTS---------------------------*/
 
 #projects{
-    background-color: rgb(58, 58, 58);
+    background-color: black;
     height: 100vh;
 }
 
