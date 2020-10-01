@@ -218,14 +218,26 @@ cursor: pointer;
 
 /*GENERAL STYLING*/
 
-body{
-margin: 0 0 0 0;
+body {
+  background-color: black;
+  transition: 0.9s all;
+}
+
+.white {
+  background-color: rgb(245, 245, 245);
+}
+
+.white #herobw{
+  display: none;
+}
+
+.black {
+  background-color: black;
 }
 
 
-
 html{
-  background-color: black;
+  background-color: transparent;
   font-family: 'Raleway', sans-serif;
   scroll-behavior: smooth;
 }
@@ -241,18 +253,10 @@ p{
     top: 10%;
 }
 
-.fade {
-  margin: 50px;
-  padding: 50px;
-  background-color: red;
-  opacity: 1;
-}
 
 /*HEADER STYLING--------------------*/
 
-header{
-background-color: black;
-}
+
 
 header li{
     display: inline;
@@ -261,34 +265,45 @@ header li{
     transition: transform .2s;
     margin: 2% 5% 0 5%;
     letter-spacing: 5px;
+    text-shadow: 2px 2px 0px black;
+    z-index: 999;
+    
+    
 }
 
 header li:hover{
 transform: scale(1.2);
+z-index: 999;
 }
 header ul{
 width: 100%;
 position: fixed;
-right: 1VW;
-z-index: 2;}
+top: -1.5vw;
+right: 0;
+height: 75px;
+color: black;
+z-index: 999;
+}
 
 ul{
-width: 100%;
 position: fixed;
-transition: transform .2s;}
+background-color: black;
+transition: transform .2s;
+z-index: 999;}
 
 /*FRONTPAGE-------------------------------*/
 
 #hero{
-    background-color: black;
     margin: 0;
     height: 100vh;
+    width: 100%;
 }
 
 #herobw{
     width: 40%;
     position: absolute;
     bottom: 0;
+    opacity: 1;
 }
 
 #heroimgdiv{
@@ -352,7 +367,6 @@ letter-spacing: 2px;
 /*PROJECTS---------------------------*/
 
 #projects{
-    background-color: white;
     height: 100vh;
 }
 
@@ -367,9 +381,11 @@ letter-spacing: 2px;
     font-size: 3vw;
     text-align: center;
     position: relative;
-    top: 5%;
+    top: 10%;
     color: black;
     margin: 0;
+    font-weight: 300;
+    letter-spacing: 2PX;
 }
 
 .projectsimg{
@@ -401,7 +417,6 @@ cursor: pointer;
 /*CONTACT STYLING START------------------------*/
 #contact{
   height: 100vh;
-  background-color: black;
 }
 
 #contacttext{
@@ -491,6 +506,8 @@ box-shadow: 0 0 2px #f6b93b;
   float: left;
   background:#f6b93b;
 }
+
+
 
 .html{
   width: 85%;

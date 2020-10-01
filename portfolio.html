@@ -2,11 +2,12 @@
 
 <head>
 
-
+    <title>Laurids Ulsø</title>
     <link rel="stylesheet" href="/styling/style.css">
     <link
         href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
 </head>
 
@@ -17,17 +18,19 @@
 
     <header>
         <!--WEB NAVIGATION-->
-        <ul>
-            <a href="#contact">
-                <li>CONTACT</li>
-            </a>
-            <a href="#projects">
-                <li>PROJECTS</li>
-            </a>
-            <a href="#hero">
-                <li>HOME</li>
-            </a>
-        </ul>
+        <div id="headerul">
+            <ul>
+                <a href="#contact">
+                    <li>CONTACT</li>
+                </a>
+                <a href="#projects">
+                    <li>PROJECTS</li>
+                </a>
+                <a href="#hero">
+                    <li>HOME</li>
+                </a>
+            </ul>
+        </div>
         <!--MOBILE NAVIGATION-->
         <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
         <link rel="stylesheet"
@@ -56,7 +59,7 @@
                 <div id="heroflex">
 
                     <div id="heroimgdiv">
-                        <img id="herobw" src="img/hero-picture-bw.png" alt="">
+                        <img class="fadeimg" id="herobw" src="img/hero-picture-bw.png" alt="">
                     </div>
 
                     <div id="herotextdiv">
@@ -81,7 +84,7 @@
     <div class="front2">
         <section id="projects">
 
-            <h2 id="projectsh2">Projects</h2>
+            <h2 id="projectsh2">PROJECTS</h2>
             <p id="projectstext">Future projects will be added - Click to view more</p>
 
             <div id="projectsflex">
