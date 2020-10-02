@@ -328,10 +328,7 @@ z-index: 999;}
     margin-right: 20px;
 }
 
-p#skillstext{
-  text-align: left;
-  text-decoration: underline;
-}
+
 
 #heroflex{
     display: flex;
@@ -381,32 +378,60 @@ letter-spacing: 2px;
     font-size: 3vw;
     text-align: center;
     position: relative;
-    top: 10%;
+    top: 5vw;
     color: black;
-    margin: 0;
     font-weight: 300;
     letter-spacing: 2PX;
 }
 
 .projectsimg{
-    width: 80%;
+    width: 15vw;
     transition: transform .2s;
-    margin-top: 3vw;
+    margin-top: 4vw;
+
 }
 
 .projectsimg:hover{
 transform: scale(1.2);
 cursor: pointer;
+opacity: 0.1;
 }
+
+#glerups{
+margin-left: 16.5vw;
+}
+
+#finddinvej{
+margin-right: 16.5vw;
+}
+
+.projectsimgtext{
+  font-size: 2em;
+  font-weight: 500;
+  color: black;
+}
+
+#glerupstext{
+  margin-left: 16.5vw;
+}
+
+#finddinvejtext{
+  margin-right: 16.5vw;
+}
+
 
 .projectsdiv{
     display: flex;
     justify-content: center;
+    flex-direction: column;
 }
 
-#projectstext{
+.projectstext{
   color: black;
-  margin-bottom: 4vw;
+  position: relative;
+  top: 15.5vw;
+  right: 9vw;
+  text-transform: uppercase;
 }
 
 .topnav{display: none;}
