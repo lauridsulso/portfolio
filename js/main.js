@@ -39,11 +39,11 @@ window.addEventListener("scroll", () => {
 //TRIGGER SKILLS BAR ANIMATION
 
 // get the element to animate
-var element = document.getElementById('skills');
+var element = document.getElementsByClassName('skills');
 var elementHeight = element.clientHeight;
 
 // listen for scroll event and call animate function
-document.addEventListener('scroll', skills);
+document.addEventListener('scroll', htmlbar);
 
 // check if element is in view
 function inView() {
@@ -66,11 +66,11 @@ function inView() {
 }
 
 // animate element when it is in view
-function skills() {
+function htmlbar() {
     // is element in view?
     if (inView()) {
         // element is in view, add class to element
-        element.classList.add('html');
+        element.classList.add('htmlbar');
     }
 }
 
