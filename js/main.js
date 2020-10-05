@@ -43,7 +43,7 @@ var element = document.getElementById('skills');
 var elementHeight = element.clientHeight;
 
 // listen for scroll event and call animate function
-document.addEventListener('scroll', html);
+document.addEventListener('scroll', skills);
 
 // check if element is in view
 function inView() {
@@ -66,7 +66,7 @@ function inView() {
 }
 
 // animate element when it is in view
-function html() {
+function skills() {
     // is element in view?
     if (inView()) {
         // element is in view, add class to element
