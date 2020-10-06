@@ -38,6 +38,30 @@ window.addEventListener("scroll", () => {
 
 //TRIGGER SKILLS BAR ANIMATION
 
+
+function isInViewport(element) {
+    let rect = element.getBoundingClientRect();
+    let html = document.documentElement;
+    return (
+        rect.top >= 0 &&
+        rect.left >= 0 &&
+        rect.bottom <= (window.innerHeight || html.clientHeight) &&
+        rect.right <= (window.innerWidth || html.clientWidth)
+    );
+}
+
+function skillsInViewPort() {
+    const element = document.querySelector('.virknu');
+    if (isInViewport(element)) {
+        document.querySelector("span.html").classList.add("html");
+        document.querySelector("span.css").classList.add("css");
+        document.querySelector("span.js").classList.add("js");
+    }
+
+}
+
+
+/*
 // get the element to animate
 var element = document.getElementsByClassName('skills');
 var elementHeight = element.clientHeight;
@@ -73,7 +97,7 @@ function htmlbar() {
         element.classList.add('htmlbar');
     }
 }
-
+*/
 
 //HIDE NAVBAR ON SCROLL
 
@@ -81,12 +105,15 @@ var prevScrollpos = window.pageYOffset;
 window.onscroll = function () {
     var currentScrollPos = window.pageYOffset;
     if (prevScrollpos > currentScrollPos) {
-        document.getElementById("headerul").style.top = "0";
+        document.getElementsByClassName("skills");
     } else {
-        document.getElementById("headerul").style.top = "10px";
+        document.getElementsByClassName("skills");
     }
     prevScrollpos = currentScrollPos;
+
+    skillsInViewPort();
 }
+
 
 
 
