@@ -35,7 +35,7 @@ window.addEventListener("scroll", () => {
 });
 
 
-
+/*
 //TRIGGER SKILLS BAR ANIMATION
 
 
@@ -97,7 +97,7 @@ function htmlbar() {
         element.classList.add('htmlbar');
     }
 }
-*/
+
 
 //HIDE NAVBAR ON SCROLL
 
@@ -113,7 +113,7 @@ window.onscroll = function () {
 
     skillsInViewPort();
 }
-
+*/
 
 
 
