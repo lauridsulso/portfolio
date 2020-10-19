@@ -1,5 +1,5 @@
 /*MOBILE STYLING------------------------------------*/
-@media only screen and (max-width: 600px) {
+@media screen and (max-width: 600px) {
  
 /*HIDES WEB NAVBAR*/
 ul{display: none;}
@@ -169,22 +169,28 @@ cursor: pointer;
   position: relative;
   top: 220vw;
 }
-
+.contactlinks{
+  color: #ffffff;
+  font-size: 3vw;
+  text-decoration: none;
+  width: 50vw;
+}
 .contacttext{
-  position: absolute;
-  width: 80%;
+  width: 90%;
+  font-size: 3vw;
   margin: auto;
   text-align: left;
 }
 
 #contacth2{
 font-weight: bold;
-font-size: 2.7em;
+font-size: 1.7em;
 }
 
 #contactflex{
   width: 100%;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   position: relative;
@@ -196,12 +202,15 @@ font-size: 2.7em;
 
 #contactinfo{
   text-align: left;
-  width: 40%;
-  padding-left: 10%;
+  width: 60%;
+  padding-left: 5%;
+  color: #ffffff;
 }
 
 #contactinfo p{
   text-align: left;
+  font-size: 5.5vw;
+  color: #ffffff;
 }
 
 
@@ -209,9 +218,6 @@ font-size: 2.7em;
 
 
 .contactbutton {
-  display: none;
-width: 10vw;
-color:#f6b93b !important;
 text-transform: uppercase;
 text-decoration: none;
 background: transparent;
@@ -220,6 +226,7 @@ border: 4px solid #f6b93b !important;
 display: inline-block;
 transition: all 0.2s ease 0s;
 margin-right: 17vw;
+color: #f6b93b;
 }
 .contactbutton:hover {
   width: 10vw;
@@ -231,19 +238,19 @@ letter-spacing: 2px;
 }
 
 #phone{
-  width: 3%;
+  width: 5%;
   margin-right: 1vw;
 }
 
 #mail{
-  width: 5%;
+  width: 10%;
   margin-right: 1vw;
 }
 
 
 /*SKILLS BAR STYLING*/
 .skills{
-  width: 25%;
+  width: 80%;
 }
 
 h3{
@@ -268,18 +275,18 @@ box-shadow: 0 0 2px #f6b93b;
 
 
 
-.htmlbar{
+.html{
   width: 85%;
   animation: html 4s;
 
 }
 
-.cssbar{
+.css{
 width: 80%;
 animation: css 4s;
 }
 
-.javascriptbar{
+.js{
 width: 50%;
 animation: javascript 4s;
 }
@@ -326,7 +333,7 @@ animation: javascript 4s;
 /*PORTFOLIO STYLING-----------------------*/
 .subh1{
   width: 40%;
-  font-size: 1em;
+  font-size: 3em;
   color: white;
   position: relative;
   margin-top: 10%;
@@ -334,11 +341,12 @@ animation: javascript 4s;
   
 }
 
-.subp{
+p.subp{
 color: white;
-width: 80%;
+width: 70%;
 font-size: 1.5em;
 text-align: left;
+margin: 17.5%;
 }
 
 .subflex{
@@ -348,8 +356,8 @@ text-align: left;
   margin-bottom: 5vw;
   justify-content: space-around;
   padding-top: 5vw;
+  align-items: center;
   padding-bottom: 5vw;
-  margin: auto;
   width: 100%;
 }
 
@@ -357,13 +365,17 @@ text-align: left;
   display: flex;
   flex-direction: column;
   align-items: center;
+
 }
 .subimg2{
 padding-top: 5vw;
+width: 80vw;
 }
 
 .subimg{
-  width: 15vw;
+  width: 65vw;
+  padding-bottom: 5vw;
+  
 }
 
 .visitsite{
@@ -371,7 +383,8 @@ padding-top: 5vw;
 }
 
 .contactbutton2 {
-width: 13vw;
+width: 35vw;
+height: 15vw;
 color:#f6b93b !important;
 text-transform: uppercase;
 text-decoration: none;
@@ -390,7 +403,7 @@ transition: all 0.2s ease 0s;
 
 
 
-@media only screen and (min-width: 600px) {
+@media screen and (min-width: 601px) {
 
 /*GENERAL STYLING*/
 
@@ -590,7 +603,7 @@ margin-right: 16.5vw;
 }
 
 .topnav{display: none;}
-}
+
 
 /*PROJECTS STYLING END--------------------------*/
 
@@ -774,7 +787,7 @@ animation: javascript 4s;
 .subp{
 color: white;
 font-size: 1.5em;
-margin: 1vw 20vw;
+margin: 0vw 20vw;
 text-align: justify;
 }
 
@@ -823,4 +836,7 @@ background: rgba(0, 0,0, 0.);
 border-color: white !important;
 transition: all 0.4s ease 0s;
 letter-spacing: 2px;
+}
+
+
 }
