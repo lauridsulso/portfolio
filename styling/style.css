@@ -838,5 +838,16 @@ transition: all 0.4s ease 0s;
 letter-spacing: 2px;
 }
 
+.resume{
+  position: absolute;
+  bottom: -2vw;
+  left: 51.5vw;
+  color: white;
+}
+
+.resume:checked{
+  color: white;
+}
+
 
 }
